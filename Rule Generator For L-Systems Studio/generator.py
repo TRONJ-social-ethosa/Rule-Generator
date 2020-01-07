@@ -9,7 +9,6 @@ count = input('Enter a number of chars: ')
 if count.isdigit():
 
     for i in range(int(count)):
-        char = choice(chars)
         expression += choice(chars)
 
 print(expression)
