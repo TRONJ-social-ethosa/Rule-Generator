@@ -1,6 +1,6 @@
-import random
+from random import choice
 
-chars = ['+','-',']','[','}','{','>','<','f','F','|','*','/']
+chars = list("+-[]{}<>fF|*/")
 expression = ''
 
 count = input('Enter a number of chars: ')
@@ -9,17 +9,17 @@ count = input('Enter a number of chars: ')
 if count.isdigit():
 
     for i in range(int(count)):
-        char = random.choice(chars)
-        char += expression
+        char = choice(chars)
+        expression += choice(chars)
 
 print(expression)
 # save file with fractal
-choose = input('Save in file? [Y] or [N] ')
-if choose.upper() == 'Y':
+choose = input('Save in file? [Y] or [N] ').upper()
+if choose == 'Y':
 
     path = input(r'Enter a path to save: ')
     with open(path, 'a') as file:
         file.write(expression)
 
-elif choose.upper() == 'N':
+elif choose == 'N':
     pass
