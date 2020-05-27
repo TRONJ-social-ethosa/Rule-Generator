@@ -1,5 +1,5 @@
 - Version
-- Latest: 0.1.0
+- Latest: 0.1.1
 # Rule-Generator
 This utility will help you generate a Lindenmayer Fractal for the L-Systems Studio app on the Play Market.
 ***
